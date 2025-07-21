@@ -4,11 +4,15 @@ This repo hosts the Helm chart for deploying [`kamu-molecule-bridge`](https://gi
 To use the chart you will need to point helm at this chart repository like so:
 
 ```sh
-helm repo add kamu-molecule-bridge https://kamu-data.github.io/kamu-molecule-bridge-helm-charts/
+helm repo add kamu-molecule-bridge \
+  https://kamu-data.github.io/kamu-molecule-bridge-helm-charts/
 
 helm repo update
 
-helm install <release-name> kamu-molecule-bridge/kamu-molecule-bridge [--version <version>] [--values values.yaml]
+helm install <release-name> \
+  kamu-molecule-bridge/kamu-molecule-bridge \
+  [--version <version>] \
+  [--values values.yaml]
 ```
 
 
