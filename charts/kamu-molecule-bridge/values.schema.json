@@ -14,8 +14,91 @@
         },
         "config": {
           "type": "object",
-          "required": [],
-          "properties": {}
+          "required": [
+            "kamu_node_gql_api_endpoint",
+            "kamu_node_token",
+            "molecule_projects_dataset_alias",
+            "chain_id",
+            "rpc_url",
+            "ipnft_contract_address",
+            "ipnft_contract_birth_block",
+            "tokenizer_contract_address",
+            "tokenizer_contract_birth_block",
+            "indexing_delay_between_iterations_in_secs",
+            "molecule_projects_loading_interval_in_secs"
+          ],
+          "properties": {
+            "http_address": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "format": "hostname"
+                },
+                {
+                  "type": "string",
+                  "format": "ipv4"
+                },
+                {
+                  "type": "string",
+                  "format": "ipv6"
+                }
+              ]
+            },
+            "http_port": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 65535
+            },
+            "kamu_node_gql_api_endpoint": {
+              "type": "string",
+              "format": "uri"
+            },
+            "kamu_node_token": {
+              "type": "string",
+              "minLength": 1
+            },
+            "molecule_projects_dataset_alias": {
+              "type": "string",
+              "enum": [
+                "molecule/projects",
+                "molecule.dev/projects"
+              ]
+            },
+            "chain_id": {
+              "type": "integer",
+              "exclusiveMinimum": 0
+            },
+            "rpc_url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "ipnft_contract_address": {
+              "type": "string",
+              "minLength": 42,
+              "maxLength": 42
+            },
+            "ipnft_contract_birth_block": {
+              "type": "integer",
+              "exclusiveMinimum": 0
+            },
+            "tokenizer_contract_address": {
+              "type": "string",
+              "minLength": 42,
+              "maxLength": 42
+            },
+            "tokenizer_contract_birth_block": {
+              "type": "integer",
+              "exclusiveMinimum": 0
+            },
+            "indexing_delay_between_iterations_in_secs": {
+              "type": "integer",
+              "exclusiveMinimum": 300
+            },
+            "molecule_projects_loading_interval_in_secs": {
+              "type": "integer",
+              "exclusiveMinimum": 300
+            }
+          }
         }
       }
     },
@@ -61,9 +144,15 @@
               "resourceFieldRef": {
                 "type": "object",
                 "properties": {
-                  "resource": {"type": "string"},
-                  "containerName": {"type": "string"},
-                  "divisor": {"type": "string"}
+                  "resource": {
+                    "type": "string"
+                  },
+                  "containerName": {
+                    "type": "string"
+                  },
+                  "divisor": {
+                    "type": "string"
+                  }
                 }
               },
               "secretKeyRef": {
