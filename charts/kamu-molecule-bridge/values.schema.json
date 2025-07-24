@@ -32,10 +32,6 @@
               "oneOf": [
                 {
                   "type": "string",
-                  "format": "hostname"
-                },
-                {
-                  "type": "string",
                   "format": "ipv4"
                 },
                 {
