@@ -18,14 +18,14 @@
             "kamu_node_gql_api_endpoint",
             "kamu_node_token",
             "molecule_projects_dataset_alias",
+            "molecule_projects_loading_interval_in_secs",
             "chain_id",
             "rpc_url",
             "ipnft_contract_address",
             "ipnft_contract_birth_block",
             "tokenizer_contract_address",
             "tokenizer_contract_birth_block",
-            "indexing_delay_between_iterations_in_secs",
-            "molecule_projects_loading_interval_in_secs"
+            "indexing_delay_between_iterations_in_secs"
           ],
           "properties": {
             "http_address": {
@@ -60,6 +60,10 @@
                 "molecule.dev/projects"
               ]
             },
+            "molecule_projects_loading_interval_in_secs": {
+              "type": "integer",
+              "exclusiveMinimum": 300
+            },
             "chain_id": {
               "type": "integer",
               "exclusiveMinimum": 0
@@ -87,10 +91,6 @@
               "exclusiveMinimum": 0
             },
             "indexing_delay_between_iterations_in_secs": {
-              "type": "integer",
-              "exclusiveMinimum": 300
-            },
-            "molecule_projects_loading_interval_in_secs": {
               "type": "integer",
               "exclusiveMinimum": 300
             }
