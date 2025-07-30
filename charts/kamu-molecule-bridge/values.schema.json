@@ -93,6 +93,12 @@
             "indexing_delay_between_iterations_in_secs": {
               "type": "integer",
               "exclusiveMinimum": 300
+            },
+            "ignore_projects_ipnft_uids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
             }
           }
         }

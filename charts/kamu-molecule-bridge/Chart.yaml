@@ -2,8 +2,8 @@ apiVersion: v2
 name: kamu-molecule-bridge
 description: Molecule Labs connector to Kamu
 type: application
-version: 0.2.3
-appVersion: "0.2.1"
+version: 0.3.0
+appVersion: "0.3.0"
 home: https://kamu.dev
 icon: https://www.kamu.dev/images/kamu_logo_icon_bg_square.png
 sources:
