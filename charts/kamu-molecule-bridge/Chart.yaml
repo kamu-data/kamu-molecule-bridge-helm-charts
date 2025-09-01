@@ -2,8 +2,8 @@ apiVersion: v2
 name: kamu-molecule-bridge
 description: Molecule Labs connector to Kamu
 type: application
-version: 0.4.0
-appVersion: "0.4.0"
+version: 0.5.0
+appVersion: "0.5.0"
 home: https://kamu.dev
 icon: https://www.kamu.dev/images/kamu_logo_icon_bg_square.png
 sources:
@@ -14,6 +14,7 @@ keywords:
   - molecule
   - kamu
   - opendatafabric
+# TODO: Update this section after migrating repository to Molecule Protocol GH organization
 # annotations:
 #   "artifacthub.io/license": Apache-2.0
 #   "artifacthub.io/links": |
