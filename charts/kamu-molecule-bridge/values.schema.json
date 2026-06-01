@@ -21,10 +21,8 @@
             "molecule_projects_loading_interval_in_secs",
             "chain_id",
             "rpc_url",
-            "ipnft_contract_address",
-            "ipnft_contract_birth_block",
-            "tokenizer_contract_address",
-            "tokenizer_contract_birth_block",
+            "labnft_contract_address",
+            "labnft_contract_birth_block",
             "indexing_delay_between_iterations_in_secs"
           ],
           "properties": {
@@ -72,21 +70,12 @@
               "type": "string",
               "format": "uri"
             },
-            "ipnft_contract_address": {
+            "labnft_contract_address": {
               "type": "string",
               "minLength": 42,
               "maxLength": 42
             },
-            "ipnft_contract_birth_block": {
-              "type": "integer",
-              "exclusiveMinimum": 0
-            },
-            "tokenizer_contract_address": {
-              "type": "string",
-              "minLength": 42,
-              "maxLength": 42
-            },
-            "tokenizer_contract_birth_block": {
+            "labnft_contract_birth_block": {
               "type": "integer",
               "exclusiveMinimum": 0
             },
@@ -94,7 +83,7 @@
               "type": "integer",
               "exclusiveMinimum": 300
             },
-            "ignore_projects_ipnft_uids": {
+            "ignore_ocl_ids": {
               "type": "array",
               "items": {
                 "type": "string"
