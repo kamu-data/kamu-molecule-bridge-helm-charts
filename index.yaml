@@ -2,6 +2,26 @@ apiVersion: v1
 entries:
   kamu-molecule-bridge:
   - apiVersion: v2
+    appVersion: 0.6.0
+    created: "2026-06-01T16:54:28.903714851Z"
+    description: Molecule Labs connector to Kamu
+    digest: c2090579b51cc35913590af4fb4be03f6e9c0cdab50e1b82e7a0ee141cf373ef
+    home: https://kamu.dev
+    icon: https://www.kamu.dev/images/kamu_logo_icon_bg_square.png
+    keywords:
+    - desci
+    - web3
+    - molecule
+    - kamu
+    - opendatafabric
+    name: kamu-molecule-bridge
+    sources:
+    - https://github.com/kamu-data/kamu-molecule-bridge-helm-charts
+    type: application
+    urls:
+    - https://github.com/kamu-data/kamu-molecule-bridge-helm-charts/releases/download/kamu-molecule-bridge-0.6.0/kamu-molecule-bridge-0.6.0.tgz
+    version: 0.6.0
+  - apiVersion: v2
     appVersion: 0.5.3
     created: "2026-01-28T15:00:07.972806333Z"
     description: Molecule Labs connector to Kamu
@@ -321,4 +341,4 @@ entries:
     urls:
     - https://github.com/kamu-data/kamu-molecule-bridge-helm-charts/releases/download/kamu-molecule-bridge-0.1.3/kamu-molecule-bridge-0.1.3.tgz
     version: 0.1.3
-generated: "2026-01-28T15:00:07.972944044Z"
+generated: "2026-06-01T16:54:28.903794209Z"
