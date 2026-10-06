@@ -60,7 +60,7 @@
             },
             "molecule_projects_loading_interval_in_secs": {
               "type": "integer",
-              "exclusiveMinimum": 300
+              "exclusiveMinimum": 0
             },
             "chain_id": {
               "type": "integer",
@@ -81,7 +81,15 @@
             },
             "indexing_delay_between_iterations_in_secs": {
               "type": "integer",
-              "exclusiveMinimum": 300
+              "exclusiveMinimum": 0
+            },
+            "data_room_batch_size": {
+              "type": "integer",
+              "exclusiveMinimum": 0
+            },
+            "max_concurrent_data_room_batches": {
+              "type": "integer",
+              "exclusiveMinimum": 0
             },
             "ignore_ocl_ids": {
               "type": "array",
